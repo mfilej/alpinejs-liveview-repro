@@ -17,7 +17,8 @@ defmodule ReproWeb.Router do
   scope "/", ReproWeb do
     pipe_through :browser
 
-    live "/", HomeLive, :index
+    live "/", HomeLive, :broken
+    live "/ok", HomeLive, :works
   end
 
   # Other scopes may use custom stacks.
